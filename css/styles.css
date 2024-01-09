@@ -1,0 +1,499 @@
+/* ------------------------------------------------------------------- 
+ * ## colors
+ * ------------------------------------------------------------------- */
+ :root {
+    /* color-1(#EA9010)
+     * color-2(#343D35)
+     * color-3(#FEF5E4)
+     */
+      --color-1: hsla(35, 87%, 49%, 1);
+      --color-2: hsla(127, 8%, 22%, 1);
+      --color-3: hsla(39, 93%, 95%, 1);
+  
+    /* theme color variations
+     */
+      --color-1-lightest             : hsla(35, 87%, 96%, 1);
+      --color-1-lighter              : hsla(35, 87%, 69%, 1);
+      --color-1-light                : hsla(35, 87%, 59%, 1);
+      --color-1-dark                 : hsla(35, 87%, 39%, 1);
+      --color-1-darker               : hsla(35, 87%, 29%, 1);
+      --color-1-darkest              : hsla(35, 87%, 10%, 1);
+  
+      --color-2-lightest             : hsla(127, 8%, 55%, 1);
+      --color-2-lighter              : hsla(127, 8%, 42%, 1);
+      --color-2-light                : hsla(127, 8%, 32%, 1);
+      --color-2-dark                 : hsla(127, 8%, 14%, 1);
+      --color-2-darker               : hsla(127, 8%, 2%, 1);
+      
+      --color-3-light                : hsla(39, 93%, 100%, 1);
+      --color-3-dark                 : hsla(39, 93%, 85%, 1);
+      --color-3-darker               : hsla(39, 93%, 75%, 1);
+  
+    /* feedback colors
+     * color-error(#ffd1d2), color-success(#c8e675), 
+     * color-info(#d7ecfb), color-notice(#fff099)
+     */
+      --color-error                  : hsla(359, 100%, 91%, 1);
+      --color-success                : hsla(76, 69%, 68%, 1);
+      --color-info                   : hsla(205, 82%, 91%, 1);
+      --color-notice                 : hsla(51, 100%, 80%, 1);
+      --color-error-content          : hsla(359, 50%, 50%, 1);
+      --color-success-content        : hsla(76, 29%, 28%, 1);
+      --color-info-content           : hsla(205, 32%, 31%, 1);
+      --color-notice-content         : hsla(51, 30%, 30%, 1);
+  
+    /* shades 
+     * generated using 
+     * Tint & Shade Generator 
+     * (https                     ://maketintsandshades.com/)
+     */
+      --color-black                  : #000000;
+      --color-gray-19                : #121212;
+      --color-gray-18                : #242525;
+      --color-gray-17                : #363737;
+      --color-gray-16                : #484949;
+      --color-gray-15                : #5b5c5c;
+      --color-gray-14                : #6d6e6e;
+      --color-gray-13                : #7f8080;
+      --color-gray-12                : #919292;
+      --color-gray-11                : #a3a5a5;
+      --color-gray-10                : #b5b7b7;
+      --color-gray-9                 : #bcbebe;
+      --color-gray-8                 : #c4c5c5;
+      --color-gray-7                 : #cbcdcd;
+      --color-gray-6                 : #d3d4d4;
+      --color-gray-5                 : #dadbdb;
+      --color-gray-4                 : #e1e2e2;
+      --color-gray-3                 : #e9e9e9;
+      --color-gray-2                 : #f0f1f1;
+      --color-gray-1                 : #f8f8f8;
+      --color-white                  : #ffffff;
+  
+    /* text
+     */
+      --color-text                   : var(--color-gray-18);
+      --color-text-dark              : #181818;
+      --color-text-light             : var(--color-gray-14);
+      --color-placeholder            : var(--color-gray-12);
+  
+    /* link
+     */
+      --color-link                   : var(--color-1);
+      --color-link-hover             : var(--color-2-lighter);
+      --color-link-active            : var(--color-2-lighter);
+  
+    /* buttons
+     */
+      --color-btn                    : var(--color-gray-4);
+      --color-btn-text               : var(--color-text);
+      --color-btn-hover              : var(--color-gray-5);
+      --color-btn-hover-text         : var(--color-text);
+      --color-btn-primary            : var(--color-1);
+      --color-btn-primary-text       : var(--color-2-dark);
+      --color-btn-primary-hover      : var(--color-1-light);
+      --color-btn-primary-hover-text : var(--color-2-dark);
+      --color-btn-stroke             : var(--color-text-dark);
+      --color-btn-stroke-text        : var(--color-text-dark);
+      --color-btn-stroke-hover       : var(--color-text-dark);
+      --color-btn-stroke-hover-text  : var(--color-white);
+  
+    /* preloader
+     */
+      --color-preloader-bg           : var(--color-2-dark);
+      --color-loader                 : var(--color-white);
+      --color-loader-light           : var(--color-2-light);
+  
+    /* others
+     */
+      --color-body                   : white;
+      --color-border                 : rgba(0, 0, 0, .1);
+      --border-radius                : 5px;
+  }
+
+  /* ====================================================================
+ * # CSS RESET
+ *
+ *
+ * --------------------------------------------------------------------
+ * http://meyerweb.com/eric/tools/css/reset/ 
+ * v2.0 | 20110126
+ * License: none (public domain)
+ * -------------------------------------------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin        : 0;
+	padding       : 0;
+	border        : 0;
+	font-size     : 100%;
+	font          : inherit;
+	vertical-align: baseline;
+}
+
+/* dots fade */
+.dots-fade>div {
+	-webkit-animation      : dots-fade 1.6s infinite ease;
+	animation              : dots-fade 1.6s infinite ease;
+	-webkit-animation-delay: 0.4s;
+	animation-delay        : 0.4s;
+}
+
+.dots-fade>div:nth-of-type(1) {
+	-webkit-animation-delay: 0.8s;
+	animation-delay        : 0.8s;
+}
+
+.dots-fade>div:nth-of-type(3) {
+	-webkit-animation-delay: 0s;
+	animation-delay        : 0s;
+}
+
+#preloader {
+	position       : fixed;
+	display        : flex;
+	flex-flow      : row wrap;
+	justify-content: center;
+	align-items    : center;
+	background     : var(--color-preloader-bg);
+	z-index        : 500;
+	height         : 100vh;
+	width          : 100%;
+	opacity        : 1;
+	overflow       : hidden;
+}
+
+.no-js #preloader {
+	display: none;
+}
+
+/* dots jump */
+.dots-jump>div {
+	-webkit-animation      : dots-jump 1.2s infinite ease;
+	animation              : dots-jump 1.2s infinite ease;
+	-webkit-animation-delay: 0.2s;
+	animation-delay        : 0.2s;
+}
+
+.dots-jump>div:nth-of-type(1) {
+	-webkit-animation-delay: 0.4s;
+	animation-delay        : 0.4s;
+}
+
+.dots-jump>div:nth-of-type(3) {
+	-webkit-animation-delay: 0s;
+	animation-delay        : 0s;
+}
+
+@-webkit-keyframes dots-jump {
+	0% {
+		top: 0;
+	}
+
+	40% {
+		top: -6px;
+	}
+
+	80% {
+		top: 0;
+	}
+}
+
+@keyframes dots-jump {
+	0% {
+		top: 0;
+	}
+
+	40% {
+		top: -6px;
+	}
+
+	80% {
+		top: 0;
+	}
+}
+
+@-webkit-keyframes dots-fade {
+	0% {
+		opacity: 1;
+	}
+
+	40% {
+		opacity: 0.2;
+	}
+
+	80% {
+		opacity: 1;
+	}
+}
+
+@keyframes dots-fade {
+	0% {
+		opacity: 1;
+	}
+
+	40% {
+		opacity: 0.2;
+	}
+
+	80% {
+		opacity: 1;
+	}
+}
+
+/* dots pulse */
+.dots-pulse>div {
+	-webkit-animation      : dots-pulse 1.2s infinite ease;
+	animation              : dots-pulse 1.2s infinite ease;
+	-webkit-animation-delay: 0.2s;
+	animation-delay        : 0.2s;
+}
+
+.dots-pulse>div:nth-of-type(1) {
+	-webkit-animation-delay: 0.4s;
+	animation-delay        : 0.4s;
+}
+
+.dots-pulse>div:nth-of-type(3) {
+	-webkit-animation-delay: 0s;
+	animation-delay        : 0s;
+}
+
+@-webkit-keyframes dots-pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	40% {
+		transform: scale(1.3);
+	}
+
+	80% {
+		transform: scale(1);
+	}
+}
+
+@keyframes dots-pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	40% {
+		transform: scale(1.3);
+	}
+
+	80% {
+		transform: scale(1);
+	}
+}
+
+/* ------------------------------------------------------------------- 
+ * ## page loaded
+ * ------------------------------------------------------------------- */
+ .ss-loaded #preloader {
+	opacity   : 0;
+	visibility: hidden;
+	transition: all 0.6s 0.9s ease-in-out;
+}
+
+.ss-loaded #preloader #loader {
+	opacity   : 0;
+	transition: opacity 0.6s ease-in-out;
+}
+
+#loader {
+	position: relative;
+	width   : 4px;
+	height  : 4px;
+	padding : 0;
+	display : inline-block;
+}
+
+#loader>div {
+	content      : "";
+	background   : var(--color-loader);
+	width        : 4px;
+	height       : 4px;
+	position     : absolute;
+	top          : 0;
+	left         : 0;
+	border-radius: 50%;
+}
+
+#loader>div:nth-of-type(1) {
+	left: 15px;
+}
+
+#loader>div:nth-of-type(3) {
+	left: -15px;
+}
+
+/* --------------------------------------------------------------------
+ * ## intro transitions
+ * -------------------------------------------------------------------- */
+ .ss-home .s-header__inner,
+ .s-intro__content-media img,
+ .s-intro__content-media .lines,
+ .s-intro__content-title,
+ .s-intro__content-pretitle,
+ .s-intro__scroll-down {
+     transition-timing-function: cubic-bezier(0.28, 0.12, 0.22, 1);
+     transition-duration       : 0.9s;
+     transition-delay          : 0s;
+     opacity                   : 0;
+ }
+ 
+ .ss-home .s-header__inner {
+     transition-duration: 0.6s;
+ }
+ 
+ .ss-home .s-header__inner,
+ .s-intro__content-media .lines {
+     transition-property: opacity;
+ }
+ 
+ .s-intro__content-media img {
+     transition-property: opacity, transform;
+     transform          : translate(-100px, 0);
+ }
+ 
+ .s-intro__content-pretitle {
+     transition-property: opacity, transform;
+     transform          : translate(-9.6rem, 150px);
+ }
+ 
+ .s-intro__content-title,
+ .s-intro__scroll-down {
+     transition-property: opacity, transform;
+     transform          : translateY(150px);
+ }
+ 
+ .no-js .ss-home .s-header__inner,
+ .no-js .s-intro__content-media .lines,
+ .ss-show .ss-home .s-header__inner,
+ .ss-show .s-intro__content-media .lines {
+     opacity: 1;
+ }
+ 
+ .no-js .s-intro__content-media img,
+ .ss-show .s-intro__content-media img {
+     opacity  : 1;
+     transform: translate(0, 0);
+ }
+ 
+ .no-js .s-intro__content-pretitle,
+ .ss-show .s-intro__content-pretitle {
+     opacity  : 1;
+     transform: translate(-9.6rem, 0);
+ }
+ 
+ .no-js .s-intro__content-title,
+ .no-js .s-intro__scroll-down,
+ .ss-show .s-intro__content-title,
+ .ss-show .s-intro__scroll-down {
+     opacity  : 1;
+     transform: translateY(0);
+ }
+ 
+ .no-js .s-intro__content-media img,
+ .ss-show .s-intro__content-media img {
+     transition-delay: 0.6s;
+ }
+ 
+ .no-js .s-intro__content-media .lines,
+ .ss-show .s-intro__content-media .lines {
+     transition-delay: 0.9s;
+ }
+ 
+ .no-js .s-intro__content-pretitle,
+ .ss-show .s-intro__content-pretitle {
+     transition-delay: 1.2s;
+ }
+ 
+ .no-js .s-intro__content-title,
+ .ss-show .s-intro__content-title {
+     transition-delay: 1.5s;
+ }
+ 
+ .no-js .s-intro__scroll-down,
+ .ss-show .s-intro__scroll-down {
+     transition-delay: 1.8s;
+     bottom          : 0;
+ }
